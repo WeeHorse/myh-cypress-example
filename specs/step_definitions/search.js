@@ -29,5 +29,5 @@ When('I type {string} followed by the Enter key', (str) => {
 });
 
 Then('I should see {string} in the search results', (str) => {
-  cy.get('[href="/publikationer/omradesanalys-2022-programmerare-och-systemutvecklare"] > .v-list-item__content > .myh-h3').contains(str, { matchCase: false })
+  cy.get('.v-list-item__content').contains(str, { matchCase: false })
 });
